@@ -48,7 +48,7 @@ public class R1StaffService extends DBService
     }
 
     //getStudents
-    public R1Staff getSaff(String staffRefId, SIFZone zone, SIFContext context) throws IllegalArgumentException, PersistenceException
+    public R1Staff getStaff(String staffRefId, SIFZone zone, SIFContext context) throws IllegalArgumentException, PersistenceException
     {
     	R1Staff row = null;
     	BasicTransaction tx = null;
