@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
-  <display-name>SIF3Training</display-name>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>ricOneAPI</display-name>
   <servlet>
     <servlet-name>Jersey REST Service</servlet-name>
     <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
@@ -12,17 +12,17 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>Jersey REST Service</servlet-name>
-    <url-pattern>/sif3Demo/*</url-pattern>
+    <url-pattern>/api/*</url-pattern>
   </servlet-mapping>
   <listener>
     <listener-class>sif3.infra.rest.web.ProviderServletContext</listener-class>
   </listener>
   <listener>
-    <listener-class>persist.common.R1ServletContext</listener-class>
+    <listener-class>api.common.R1ServletContext</listener-class>
   </listener>
   <context-param>
     <param-name>SERVICE_PROPERTY_FILE</param-name>
-    <param-value>R1Provider</param-value> <!-- References config/properties-->
+    <param-value>R1Provider</param-value>
   </context-param>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>

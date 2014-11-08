@@ -55,7 +55,7 @@
         <!-- ************** -->
         <!--  Mapping Files -->
         <!-- ************** -->
-        <mapping resource="persist/model/R1.hbm.xml"/>  
+        <mapping resource="api/model/R1.hbm.xml"/>  
         
 	</session-factory>
 </hibernate-configuration>
